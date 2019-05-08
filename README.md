@@ -27,6 +27,7 @@ File Structure
 
 At the end of this tutorial, we will have the following file structure.
 
+```html
 ├─ app/
 ├─── assets/
 ├────── css/
@@ -40,6 +41,7 @@ At the end of this tutorial, we will have the following file structure.
 ├────── update_product.template.html
 ├─── app.js
 ├─ index.html
+```
 
 
 
