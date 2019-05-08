@@ -1,6 +1,8 @@
 AngularJS CRUD Example with Material Design – Step by Step Guide!
 ===
 
+we will learn how to do the same CRUD operations with AngularJS, Angular Material and REST API.
+
 
 BASIC FILES & FOLDERS
 ---
@@ -43,8 +45,6 @@ JSON data will be handled by the REST API built using PHP.
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/3.png)
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/4.png)
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/5.png)
-
-we will learn how to do the same CRUD operations with AngularJS, Angular Material and REST API.
 
 
 
