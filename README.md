@@ -39,11 +39,20 @@ This tutorial will focus on creating, reading, updating, deleting and searching 
 JSON data will be handled by the REST API built using PHP.
 
 
-
+READ JSON DATA
+---
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/1.png)
+Create or Insert Data
+---
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/2.png)
+Read One Data 
+---
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/3.png)
+Update Data
+---
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/4.png)
+Delete Data
+---
 ![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/5.png)
 
 
