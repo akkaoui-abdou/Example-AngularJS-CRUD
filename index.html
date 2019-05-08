@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Read Products</title>
+
+<!-- angular material style sheet -->
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+ 
+<!-- roboto font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+ 
+<!-- include custom CSS -->
+<link rel="stylesheet" href="app/assets/css/custom.css" />
+
+
+ 
+</head>
+<body>
+ 
+
+
+<!-- container of our app -->
+<div class="container" ng-app="myApp">
+ 
+    <!-- read products template -->
+
+
+    <ng-include src="'./app/products/read_products.template.html'"></ng-include>
+
+
+ 
+</div> <!-- end container -->
+ 
+
+
+
+
+
+<!-- include angular js -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+ 
+<!-- needed for angular material -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+ 
+<!-- angular material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+
+
+
+
+<!-- app -->
+<script type="text/javascript" src="app/app.js"></script>
+ 
+<!-- products controller -->
+<script type="text/javascript" src="app/products/products.controller.js"></script>
+ 
+<!-- products factory -->
+<script type="text/javascript" src="app/products/products.factory.js"></script>
+
+
+</body>
+</html>

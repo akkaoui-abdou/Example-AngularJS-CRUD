@@ -1,0 +1,38 @@
+<md-dialog>
+    <form ng-cloak>
+ 
+        <!-- dialog box title -->
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Read One Product</h2>
+            </div>
+        </md-toolbar>
+ 
+        <md-dialog-content>
+            <div class="md-dialog-content">
+ 
+                <!-- display product information -->
+                <md-input-container class="md-block">
+                    <label>Name</label>
+                    <input ng-model="name" disabled>
+                </md-input-container>
+ 
+                <md-input-container class="md-block">
+                    <label>Description</label>
+                    <input ng-model="description" disabled>
+                </md-input-container>
+ 
+                <md-input-container class="md-block">
+                    <label>Price</label>
+                    <input ng-model="price" disabled>
+                </md-input-container>
+ 
+            </div>
+        </md-dialog-content>
+ 
+        <!-- button to close the dialog box -->
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">Cancel</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

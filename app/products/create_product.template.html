@@ -1,0 +1,37 @@
+<md-dialog>
+    <form ng-cloak>
+         
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Create Product</h2>
+            </div>
+        </md-toolbar>
+ 
+        <md-dialog-content>
+            <div class="md-dialog-content">
+ 
+                <!-- we are using ng-model to bind this view and the 'product model -->
+                <md-input-container class="md-block">
+                    <label>Name</label>
+                    <input ng-model="name">
+                </md-input-container>
+ 
+                <md-input-container class="md-block">
+                    <label>Description</label>
+                    <input ng-model="description">
+                </md-input-container>
+ 
+                <md-input-container class="md-block">
+                    <label>Price</label>
+                    <input ng-model="price">
+                </md-input-container>
+ 
+            </div>
+        </md-dialog-content>
+ 
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">Cancel</md-button>
+            <md-button ng-click="createProduct()" class="md-primary">Create</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
