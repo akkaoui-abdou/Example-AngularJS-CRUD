@@ -1,198 +1,45 @@
 AngularJS CRUD Example with Material Design – Step by Step Guide!
 ===
 
-Demo
+TUTORIAL OVERVIEW
 ---
+What is AngularJS? It is one of the leading framework for building large JavaScript applications that are easy to maintain.
+
+It makes the development faster because we can implement useful concepts like dependency injection, two-way data binding, reusable code and unit testing.
+
+This tutorial will focus on creating, reading, updating, deleting and searching database records. We will do it using AngularJS and Angular Material as it's user interface component.
+
+JSON data will be handled by the REST API built using PHP.
 
 
-![alt text](https://github.com/akkaoui-abdou/tuto-react-display-more-component/blob/master/Demo.png)
 
-props
-state
-setState
+![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/1.png)
+![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/2.png)
+![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/3.png)
+![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/4.png)
+![alt text](https://github.com/akkaoui-abdou/Example-AngularJS-CRUD/blob/master/img/5.png)
 
+we will learn how to do the same CRUD operations with AngularJS, Angular Material and REST API.
 
-First step install react 
+BASIC FILES & FOLDERS
 ---
+File Structure
 
-for install react use this commande in Terminal:
+At the end of this tutorial, we will have the following file structure.
 
-npm init react-app my-app
-
-
-
-Second step start your app react 
----
-
-for start your app in react use this commande in Terminal:
-
-npm start
-
-
-in file App.js add the script below 
----
-
-
-```javascript
-
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+├─ app/
+├─── assets/
+├────── css/
+├───────── custom.css
+├─── products/
+├────── create_product.template.html
+├────── products.controller.js
+├────── products.factory.js
+├────── read_one_product.template.html
+├────── read_products.template.html
+├────── update_product.template.html
+├─── app.js
+├─ index.html
 
 
 
-
-class MyHeader extends Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: null,
-    };
-  }
-  render (){
-      return (
-        <div>
-          <img src={this.props.logo} width={this.props.longeur} alt="logo"/>
-        </div>
-      );
-  }
-
-}
-
-
-class MyContent extends Component{
-
-   constructor(props){
-      super(props);
-      this.state = {
-        isToggled:true,
-      };
-  
-      this.showval= this.showval.bind(this);
-    }
-  
-  showval(e){
-      e.preventDefault();
-      this.setState(state=>({
-        isToggled:!state.isToggled
-      }));
-  
-   }
-
-
-  render (){
-
-const SectionDetail = {
-  title :'titre Section 1',
-  description :'description Section 1',
-}
-
-const Section1 = (props)=>{
-  return <div>{props.section}<div>{SectionDetail.title}</div><div>{SectionDetail.description}</div></div>
-}
-
-const Section2 = (props)=>{
-  return <div>{props.section}</div>
-}
-
-
-
-      return (
-        <div className="container">
-         <Section1 section ="Sesction 1"/>
-         <Section2 section ="Sesction 2"/>
-         <button onClick={this.showval}>{this.state.isToggled?' ON':'OFF'}</button>
-        </div>
-      );
-  }
-
-}
-
-class MyFooter extends Component{
-
- 
-
-  render (){
-    
-      return (
-        <div className="container">
-        <div>Section Footer</div>
-       
-         
-        </div>
-      );
-  }
-
-}
-
-
-class App extends Component {
-   constructor(props){
-      super(props);
-      
-      
-      this.state = {employer: [
-         {id:100,name:'LIONEL MESSI',age:36},
-         {id:101,name:'CRISTIANO RONALDO',age:26},
-         {id:102,name:'MOHAMED SALAH',age:22},
-         {id:103,name:'IDIN HAZARD',age:43},
-             ]
-      };
-      
-      
-      }
-render() {
-
-function ListeItem(props){
-  return  (
-                      <tr >
-                        <td> {props.value.id} </td>
-                        <td> {props.value.name} </td>
-                        <td> {props.value.age} </td>
-                    
-                    </tr>)
-              
-            
-       
-}
-
-
-function ListItems(props){
-  const employer = props.employer;
-  const ListItem = employer.map((number,index)=>
-    <ListeItem key={index} value={number} ></ListeItem>
-    );
-    return (<div>
-      <table><thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>AGE</th>
-             
-                  </tr>
-                  </thead>  
-                  <tbody>  {ListItem} </tbody>
-                 </table>
-                 </div>
-    )
-
-}
-
- 
-
-    return (
-      <div className="App">
-        <MyHeader logo = {logo} longeur = '200' />
-        <MyContent/>
-        <ListItems employer ={this.state.employer} />
-        <MyFooter/>
-      </div>
-    );
-  }
-}
-
-export default App;
-
-
-
-```
